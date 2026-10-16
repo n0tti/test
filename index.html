@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>神戸-大阪紅葉&温泉の旅</title>
+    <title>神戶-大阪溫泉&紅葉(?)之旅</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,9 +12,20 @@
             theme: {
                 extend: {
                     colors: {
-                        lightBg: '#f9f7f2',
+                        lightBg: '#fcfcf9',
                         cardBg: '#ffffff',
-                        accentAmber: '#d97706',
+                        matcha: {
+                            50: '#f4f6f3',
+                            100: '#e3e8e1',
+                            200: '#c8d3c5',
+                            300: '#a3b59f',
+                            400: '#7d9478',
+                            500: '#587052',
+                            600: '#465a41',
+                            700: '#394935',
+                            800: '#2f3c2c',
+                            900: '#283226'
+                        },
                         subText: '#64748b'
                     },
                     aspectRatio: {
@@ -30,42 +41,42 @@
     <style>
         body { 
             font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #F9F7F2;
+            background-color: #F8F9F6;
             overflow-x: hidden;
         }
     </style>
 </head>
-<body class="bg-[f9f7f2] text-slate-800 min-h-screen flex flex-col selection:bg-amber-200 selection:text-amber-900">
+<body class="bg-[#fcfcf9] text-slate-800 min-h-screen flex flex-col selection:bg-matcha-200 selection:text-matcha-900">
 
-    <!-- Header / Hero Section -->
-    <header class="relative bg-gradient-to-b from-white via-amber-50/30 to-[#f9f7f2] border-b border-slate-200/80 shadow-sm">
+    <!--標題/主視覺區塊-->
+    <header class="relative bg-gradient-to-b from-white via-matcha-50/50 to-[#fcfcf9] border-b border-slate-200/80 shadow-sm">
         <div class="max-w-5xl mx-auto px-4 py-10 sm:py-14 text-center">
-            <span class="inline-block py-1.5 px-4 rounded-full bg-amber-100/90 text-amber-900 text-xs sm:text-sm font-semibold mb-4 border border-amber-200 shadow-sm">
-                <i class="fa-solid fa-plane-departure mr-1.5 text-amber-700"></i> 2026.11.12 - 2026.11.16
+            <span class="inline-block py-1.5 px-4 rounded-full bg-matcha-100/90 text-matcha-900 text-xs sm:text-sm font-semibold mb-4 border border-matcha-200 shadow-sm">
+                <i class="fa-solid fa-plane-departure mr-1.5 text-matcha-700"></i> 2026.11.12 - 2026.11.16
             </span>
             <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-slate-900 mb-4">
-                神戸-大阪<span class="text-amber-600">紅葉&温泉</span>の旅
+                神戶-大阪<span class="text-matcha-600">溫泉&紅葉(?)</span>之旅
             </h1>
             <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-                步行動線極簡化‧美景‧美食‧溫泉放鬆
+                極簡步行動線‧美景‧美食‧溫泉
             </p>
             
-            <!-- Quick Flight & Hotel Info -->
+            <!--航班&住宿資訊-->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-left text-xs sm:text-sm">
                 <div class="bg-white/90 p-4 rounded-2xl border border-slate-200/80 shadow-sm backdrop-blur">
-                    <div class="font-bold text-amber-800 mb-2 flex items-center justify-between">
-                        <span><i class="fa-solid fa-plane mr-2 text-amber-600"></i> 航班資訊</span>
-                        <span class="text-[10px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded border border-amber-200 font-medium">關西機場 T2 往返</span>
+                    <div class="font-bold text-matcha-800 mb-2 flex items-center justify-between">
+                        <span><i class="fa-solid fa-plane mr-2 text-matcha-600"></i> 航班資訊</span>
+                        <span class="text-[10px] bg-matcha-50 text-matcha-800 px-2 py-0.5 rounded border border-matcha-200 font-medium">樂桃航空（A320）</span>
                     </div>
-                    <p class="text-slate-700"><span class="font-semibold text-slate-900">抵達：</span>11/12(四) 18:05 降落 KIX T2</p>
-                    <p class="text-slate-700"><span class="font-semibold text-slate-900">離境：</span>11/16(一) 10:35 飛離 KIX T2</p>
+                    <p class="text-slate-700"><span class="font-semibold text-slate-900">出發：</span>11.12(四) 14:20 KHH ➔ 18:05 KIX (MM032)</p>
+                    <p class="text-slate-700"><span class="font-semibold text-slate-900">回程：</span>11.16(一) 10:35 KIX ➔ 13:20 KHH (MM031)</p>
                 </div>
                 <div class="bg-white/90 p-4 rounded-2xl border border-slate-200/80 shadow-sm backdrop-blur">
-                    <div class="font-bold text-amber-800 mb-2 flex items-center justify-between">
-                        <span><i class="fa-solid fa-hotel mr-2 text-amber-600"></i> 住宿資訊</span>
+                    <div class="font-bold text-matcha-800 mb-2 flex items-center justify-between">
+                        <span><i class="fa-solid fa-hotel mr-2 text-matcha-600"></i> 住宿資訊</span>
                     </div>
-                    <p class="text-slate-700"><span class="font-semibold text-slate-900">11.12-11.14：</span>東橫INN 神戶三宮站東（附免費早餐／10:00前退房）</p>
-                    <p class="text-slate-700"><span class="font-semibold text-slate-900">11.14-11.16：</span>APA Hotel & Resort 御堂筋本町站前塔樓（13:00後入住／08:00前退房）</p>
+                    <p class="text-slate-700"><span class="font-semibold text-slate-900">11.12-11.14：</span>東橫INN神戶三宮站東（附免費早餐／10:00前退房）</p>
+                    <p class="text-slate-700"><span class="font-semibold text-slate-900">11.14-11.16：</span>APA飯店&度假村〈御堂筋本町站前塔〉（13:00後入住／08:00前退房）</p>
                 </div>
             </div>
         </div>
@@ -73,37 +84,54 @@
 
     <!-- Main Navigation Bar -->
     <div id="tab-buttons" class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm py-3 px-4">
-        <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-2">
-            <button data-day="day1" class="day-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-amber-600 text-white shadow-md shadow-amber-600/20">
-                11/12（木）神戶港夜景
+        <div class="max-w-5xl mx-auto flex flex-wrap justify-center gap-1.5 sm:gap-2">
+            <button data-day="day1" class="day-tab px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-matcha-600 text-white shadow-md shadow-matcha-600/20">
+                11/12（四）神戶港
             </button>
-            <button data-day="day2" class="day-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
-                11/13（金）異人館-香草園-有馬溫泉
+            <button data-day="day2" class="day-tab px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+                11/13（五）異人館 ➔ 太閤之湯
             </button>
-            <button data-day="day3" class="day-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
-                11/14（土）前進大阪
+            <button data-day="day3" class="day-tab px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+                11/14（六）寶可夢 ➔ 道頓堀
             </button>
-            <button data-day="day4" class="day-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
-                11/15（日）阿倍野絕景
+            <button data-day="day4" class="day-tab px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+                11/15（日）勝尾寺 ➔ 阿倍野
             </button>
-            <button data-day="day5" class="day-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
-                11/16（月）哭著回家
+            <button data-day="day5" class="day-tab px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+                11/16（一）平安賦歸
             </button>
+            
+            <div class="w-full sm:w-auto flex justify-center gap-1.5 mt-1 sm:mt-0 pt-1 sm:pt-0 sm:border-l border-slate-200 sm:pl-2">
+                <a href="#checklist" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-matcha-50 text-matcha-800 hover:bg-matcha-100 border border-matcha-200 transition">
+                    <i class="fa-solid fa-list-check mr-1"></i>行李
+                </a>
+                <a href="#shopping" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-matcha-50 text-matcha-800 hover:bg-matcha-100 border border-matcha-200 transition">
+                    <i class="fa-solid fa-bag-shopping mr-1"></i>購物
+                </a>
+                <a href="#contacts" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-matcha-50 text-matcha-800 hover:bg-matcha-100 border border-matcha-200 transition">
+                    <i class="fa-solid fa-phone-volume mr-1"></i>求助
+                </a>
+                <a href="#phrases" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-matcha-50 text-matcha-800 hover:bg-matcha-100 border border-matcha-200 transition">
+                    <i class="fa-solid fa-comments mr-1"></i>會話
+                </a>
+                <a href="#glossary" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-matcha-50 text-matcha-800 hover:bg-matcha-100 border border-matcha-200 transition">
+                    <i class="fa-solid fa-book-bookmark mr-1"></i>對照
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Main Content Container -->
-    <main class="w-full flex-grow">
+    <!--主要內容-->
+    <main class="w-full flex-grow space-y-12 pb-16">
         
-        <!-- ==================== DAY 1 CONTENT ==================== -->
+        <!-- ==================== DAY 4 CONTENT ==================== -->
         <div id="content-day1" class="day-content space-y-6">
-            
             <!-- 3:1 Banner Image Header: 100% Full-Bleed Edge-to-Edge with NO Border / Overlay / Rounding / Text -->
             <div class="w-full aspect-[3/1] bg-slate-100 overflow-hidden">
-                <img src="img/day1.png" 
+                <img src="https://n0tti.github.io/test/img/day1.png" 
                      alt="Kobe Night View Banner" 
                      class="w-full h-full object-cover block"
-                     onerror="this.src='https://placehold.co/1800x600/fef3c7/d97706?text=Kobe+Port+Night+View+Banner+3%3A1'">
+                     onerror="this.src='https://placehold.co/1800x600/e3e8e1/465a41?text=Kobe+Port+Night+View+Banner+3%3A1'">
             </div>
 
             <!-- Content Area Below Banner -->
@@ -112,42 +140,55 @@
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-2">
                         <div>
-                            <span class="text-amber-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 01 ‧ 11月12日（木）</span>
-                            <h2 class="text-xl sm:text-2xl font-black text-slate-900">抵達關西 ➔ 入住神戶三宮 ➔ 燒肉丼十番 ➔ 神戶港浪漫夜景</h2>
+                            <span class="text-matcha-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 01 ‧ 11月12日（木）</span>
+                            <h2 class="text-xl sm:text-2xl font-black text-slate-900">抵達關西機場 ➔ 入住東橫INN ➔ 燒肉丼十番 ➔ 神戶港夜景</h2>
                         </div>
-                        <span class="text-xs bg-amber-50 text-amber-800 border border-amber-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
-                            <i class="fa-regular fa-clock mr-1"></i>作息：23:00 就寢
+                        <span class="text-xs bg-matcha-50 text-matcha-800 border border-matcha-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
+                            <i class="fa-regular fa-clock mr-1"></i>請於11:50前抵達高雄機場
                         </span>
                     </div>
 
                     <!-- Detailed Transportation Guidance Box -->
-                    <div class="bg-amber-50/80 border border-amber-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
-                        <div class="font-bold text-amber-900 flex items-center justify-between">
-                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-amber-700"></i> 今日詳細交通指引</span>
-                            <a href="https://www.kate.co.jp/tcn/timetable/detail/KB" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-800 underline hover:text-amber-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>利木津巴士時刻表
+                    <div class="bg-matcha-50/80 border border-matcha-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
+                        <div class="font-bold text-matcha-900 flex items-center justify-between">
+                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-matcha-700"></i> 今日指南</span>
+                            <a href="https://mkt.ctbcbank.com/long/creditcard/N2025052200014_01.pdf" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>南苑貴賓室位置圖
                             </a>
                         </div>
-                        <p><strong>關西機場至神戶：</strong>18:05 降落 T2 通關後，直接於 T2 巴士站搭乘利木津巴士直達「神戶三宮站」（車程約 65-75 分鐘，免去搭接駁車至 T1 轉電車的麻煩）。</p>
-                        <p><strong>神戶港夜景動線：</strong>用餐後步行至神戶市營地下鐵海岸線「三宮·花時計前站」，搭至<strong>「港元町站」</strong>下車。出站步行 7 分鐘即可直達神戶港塔與美利堅公園；賞夜景後可沿海濱木棧道漫步至 Mosaic 廣場，最後從<strong>「海港園地站（Harborland）」</strong>搭地下鐵返回三宮，完美不繞路。</p>
+                        <p><strong>高雄機場：</strong>須於航班起飛（14:20）前150分鐘～50分鐘至樂桃航空櫃台辦理報到。出境安檢完成後，往左方步行3分鐘刷中信LINE Pay鼎極卡使用<strong>南苑國際商務中心</strong>。</p>
                     </div>
                 </div>
 
-                <!-- Timeline Activities -->
+                <!--第1天行程表-->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
                     <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center">
-                        <i class="fa-solid fa-list-check mr-2 text-amber-600"></i> 今日行程時程表
+                        <i class="fa-solid fa-list-check mr-2 text-matcha-600"></i> 今日行程
                     </h3>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">18:05 - 20:15</span>
-                            <h4 class="font-bold text-slate-900 text-base">關西機場 T2 入境 ➔ 利木津巴士至神戶三宮</h4>
-                            <p class="text-xs text-slate-600">快速通關與提領行李，搭乘利木津巴士直達神戶三宮站，車程舒適放鬆。</p>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">11:00 - 11:50</span>
+                            <h4 class="font-bold text-slate-900 text-base">捷運都會公園站 ➔ 高雄國際機場</h4>
+                            <p class="text-xs text-slate-600">國際線航廈位於捷運站6號出口，廁所在反方向。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.kate.co.jp/tcn/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg border border-amber-200 transition">
-                                <i class="fa-solid fa-bus"></i> 巴士官網
+                            <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-lg font-medium">交通</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
+                        <div class="space-y-1">
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">18:05 - 20:25</span>
+                            <h4 class="font-bold text-slate-900 text-base">關西機場第2航廈 ➔ 神戶三宮站</h4>
+                            <p class="text-xs text-slate-600">入境通關後領取行李，在第2航廈（T2）直接購票搭乘利木津巴士，前往神戶三宮站（2,200 yen，車程約80分鐘）。</p>
+                        </div>
+                        <div class="flex items-center gap-2 shrink-0">
+                            <a href="https://www.kate.co.jp/tcn/kix_busstop/#terminal2" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 乘車處
+                            </a>
+                            <a href="https://www.kate.co.jp/tcn/timetable/detail/KB" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
+                                <i class="fa-solid fa-bus"></i> 時刻表
                             </a>
                             <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-lg font-medium">交通</span>
                         </div>
@@ -155,27 +196,30 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">20:15 - 20:45</span>
-                            <h4 class="font-bold text-slate-900 text-base">Check-in 入住：東橫INN 神戶三宮站東</h4>
-                            <p class="text-xs text-slate-600">辦理入住並擺放行李。<span class="text-amber-900 font-medium">（嚴格遵守規定：入住前不安排其他行程）</span></p>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">20:25 - 20:45</span>
+                            <h4 class="font-bold text-slate-900 text-base">Check in：東橫INN神戶三宮站東</h4>
+                            <p class="text-xs text-slate-600">辦理入住並擺放行李。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
                             <a href="https://www.google.com/maps/search/?api=1&query=東横INN神戸三宮駅東" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-location-dot text-red-500"></i> 地圖導航
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 地圖
                             </a>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg font-medium">住宿</span>
+                            <span class="text-xs bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg font-medium">住宿</span>
                         </div>
                     </div>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">20:45 - 21:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">晚餐：燒肉丼十番（神戶三宮店）</h4>
-                            <p class="text-xs text-slate-600">品嚐炭香濃郁的人氣招牌燒肉丼，補滿第一晚的體力。</p>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">20:45 - 21:30</span>
+                            <h4 class="font-bold text-slate-900 text-base">燒肉丼十番（神戶三宮店）</h4>
+                            <p class="text-xs text-slate-600">招牌是カルビ丼，只收現金。進入店內後，在左手邊的售票機點餐，將餐券交給店員，然後前往店員引導的座位就座。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://tabelog.com/hyogo/A2801/A280101/28002383/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-orange-50 hover:bg-orange-100 text-orange-800 px-2.5 py-1.5 rounded-lg border border-orange-200 transition">
-                                <i class="fa-solid fa-utensils"></i> Tabelog 評價
+                            <a href="https://www.google.com/maps/search/?api=1&query=燒肉丼+十番" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 地圖
+                            </a>
+                            <a href="https://ju-ban.com/yakinikudon/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-orange-50 hover:bg-orange-100 text-orange-800 px-2.5 py-1.5 rounded-lg border border-orange-200 transition">
+                                <i class="fa-solid fa-utensils"></i> 官網
                             </a>
                             <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg font-medium">美食</span>
                         </div>
@@ -183,18 +227,18 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">21:30 - 22:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">神戶港夜景散策（美利堅公園 ➔ 神戶港塔 ➔ Mosaic 廣場）</h4>
-                            <p class="text-xs text-slate-600">搭海岸線至「港元町站」下車，欣賞璀璨紅色神戶港塔夜景，再步行至 Mosaic 廣場，由「海港園地站」搭地下鐵回三宮。</p>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">21:30 - 22:30</span>
+                            <h4 class="font-bold text-slate-900 text-base">神戶港散策（美利堅公園 ➔ 神戶港塔 ➔ Mosaic 廣場）</h4>
+                            <p class="text-xs text-slate-600">用餐後步行至<strong>三宮・花時計前站</strong>搭乘神戶地下鐵海岸線，在<strong>港元町站</strong>下車，步行約7分鐘後抵達美利堅公園與神戶港塔（營業至23:00）。可沿著海濱木棧道漫步至摩賽克廣場，最後從<strong>海港園地站</strong>搭乘地鐵返回三宮。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
+                            <a href="https://www.google.com/maps/search/?api=1&query=メリケンパーク" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 公園地圖
+                            </a>
                             <a href="https://www.kobe-port-tower.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-blue-50 hover:bg-blue-100 text-blue-800 px-2.5 py-1.5 rounded-lg border border-blue-200 transition">
                                 <i class="fa-solid fa-globe"></i> 港塔官網
                             </a>
-                            <a href="https://www.google.com/maps/search/?api=1&query=メリケンパーク" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-location-dot text-red-500"></i> 地圖
-                            </a>
-                            <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">夜景景點</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
                     </div>
                 </div>
@@ -203,13 +247,12 @@
 
         <!-- ==================== DAY 2 CONTENT ==================== -->
         <div id="content-day2" class="day-content space-y-6 hidden">
-            
-            <!-- 3:1 Banner Image Header: 100% Full-Bleed Edge-to-Edge with NO Border / Overlay / Rounding / Text -->
+            <!-- 3:1 Banner Image Header -->
             <div class="w-full aspect-[3/1] bg-slate-100 overflow-hidden">
-                <img src="img/day2.png" 
+                <img src="https://n0tti.github.io/test/img/day2.png" 
                      alt="Arima Onsen Banner" 
                      class="w-full h-full object-cover block"
-                     onerror="this.src='https://placehold.co/1800x600/fef3c7/d97706?text=Arima+Onsen+%26+Herb+Gardens+Banner+3%3A1'">
+                     onerror="this.src='https://placehold.co/1800x600/e3e8e1/465a41?text=Arima+Onsen+%26+Herb+Gardens+Banner+3%3A1'">
             </div>
 
             <!-- Content Area Below Banner -->
@@ -218,46 +261,68 @@
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-2">
                         <div>
-                            <span class="text-amber-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 02 ‧ 11月13日（金）</span>
-                            <h2 class="text-xl sm:text-2xl font-black text-slate-900">異人館清晨散策 ➔ 布引香草園 ➔ 瑪黑兄弟與HARBS ➔ 有馬溫泉太閤之湯</h2>
+                            <span class="text-matcha-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 02 ‧ 11月13日（金）</span>
+                            <h2 class="text-xl sm:text-2xl font-black text-slate-900">異人館散策 ➔ 布引香草園 ➔ 太閤之湯</h2>
                         </div>
-                        <span class="text-xs bg-amber-50 text-amber-800 border border-amber-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
-                            <i class="fa-regular fa-clock mr-1"></i>作息：07:00 起床 | 23:00 就寢
+                        <span class="text-xs bg-matcha-50 text-matcha-800 border border-matcha-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
+                            <i class="fa-regular fa-clock mr-1"></i>07:00 起床
                         </span>
                     </div>
 
                     <!-- Detailed Transportation Guidance Box -->
-                    <div class="bg-amber-50/80 border border-amber-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
-                        <div class="font-bold text-amber-900 flex items-center justify-between">
-                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-amber-700"></i> 今日順暢動線與交通指引</span>
-                            <a href="https://www.taikounoyu.com/" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-800 underline hover:text-amber-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>太閤の湯官網
+                    <div class="bg-matcha-50/80 border border-matcha-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
+                        <div class="font-bold text-matcha-900 flex items-center justify-between">
+                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-matcha-700"></i> 今日指南</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=M6W2%2BCM+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>新生田川站牌地圖
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=M5VW%2BX5+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>三宮站Terminal前站牌地圖
+                            </a>
+                            <a href="https://kotsu.city.kobe.lg.jp/bus/bus-stop-list/bus-300/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>新生田川市營巴士時刻表
+                            </a>
+                            <a href="https://rosen.hanshin-bus.co.jp/diagramhomen?mode=1&fr=新生田川〔阪神バス〕&dt=202611130000&dgmpl=新生田川〔阪神バス〕" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>阪神巴士時刻表
+                            </a>
+                            <a href="https://kotsu.city.kobe.lg.jp/bus/bus-stop-list/bus-266/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>三宮站Terminal前市營巴士時刻表
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=M5VV%2BFH+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>CITY LOOP三宮往北站牌地圖
+                            </a>
+                            <a href="https://www.shinkibus.co.jp/bus/cityloop/time/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>CITY LOOP時刻表
                             </a>
                         </div>
-                        <p><strong>避開人潮心法：</strong>08:30 先至星巴克北野異人館店（08:00 即營業）享用晨光咖啡與拍無人空景，再前往北野天滿神社與風見雞本舖買布丁。</p>
-                        <p><strong>三宮甜點鹹食最佳順序：</strong>生田神社 ➔ 神戶 BAL 2F 瑪黑兄弟買茶葉 ➔ 本神戶肉森谷商店現炸牛肉可樂餅（鹹食） ➔ HARBS 三宮店水果千層蛋糕（甜點完美銜接！）。</p>
-                        <p><strong>往有馬溫泉：</strong>三宮站搭乘阪急高速巴士（約 45 分鐘直達）或神戶電鐵前往有馬溫泉，太閤之湯享用名湯金銀泉與壽喜燒御膳（17:30 後供應，最後點餐 20:30）。</p>
+                        <p>07:00起床後可至旅館1樓享用<strong>免費早餐</strong>（供應時間：06:30〜09:00）。 </p>
+                        <p>距離旅館最近的巴士站牌為<strong>新生田川</strong>，可搭乘阪神巴士<strong>西宮神戶線（神戶稅關方向）</strong>及神戶市營巴士<strong>中午12點前的29系統（三宮站Terminal方向）</strong>前往三宮站（中間皆只會經過雲井通1站）。自三宮站Terminal前返回旅館可搭乘<strong>101系統（脇之濱先行HAT神戶方向）</strong>及神戶市營巴士<strong>中午12點後的29系統（HAT神戶經由摩耶埠頭方向）</strong>。</p>
+                        <p><strong>CITY LOOP觀光巴士：</strong>站牌有獨立的編號，三宮站往北的方向為7號，最早的一班為08:50。異人館街為10號，布引香草園為11號，三宮站往南為13號。</p>
                     </div>
                 </div>
 
                 <!-- Timeline Activities -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
                     <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center">
-                        <i class="fa-solid fa-list-check mr-2 text-amber-600"></i> 今日行程時程表
+                        <i class="fa-solid fa-list-check mr-2 text-matcha-600"></i> 今日行程
                     </h3>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">08:30 - 10:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">北野異人館清晨巡禮（避開人潮）</h4>
-                            <p class="text-xs text-slate-600">造訪百年洋館星巴克神戶北野異人館店、北野天滿神社俯瞰神戶市景，於風見雞本舖購買招牌布丁。</p>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">08:30 - 10:30</span>
+                            <h4 class="font-bold text-slate-900 text-base">北野異人館散策</h4>
+                            <p class="text-xs text-slate-600">可步行或搭乘CITY LOOP觀光巴士前往造訪星巴克神戶北野異人館店（08:00開始營業）、北野天滿神社，於風見雞本舖購買招牌布丁當伴手禮。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
                             <a href="https://www.google.com/maps/search/?api=1&query=スターバックス+コーヒー+神戶北野異人館店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg border border-emerald-200 transition">
-                                <i class="fa-solid fa-mug-hot"></i> 星巴克
+                                <i class="fa-solid fa-mug-hot"></i> 星巴克地圖
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=北野天滿神社
+" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 神社地圖
                             </a>
                             <a href="https://www.google.com/maps/search/?api=1&query=風見鶏本舗" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-gift"></i> 風見雞本舖
+                                <i class="fa-solid fa-gift"></i> 風見雞本舖地圖
                             </a>
                             <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
@@ -265,24 +330,24 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">10:30 - 12:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">神戶布引香草園 & 景觀纜車</h4>
-                            <p class="text-xs text-slate-600">新神戶站搭纜車上山，俯瞰山海全景與布引瀑布，漫步香草花園與溫室。</p>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">10:30 - 12:30</span>
+                            <h4 class="font-bold text-slate-900 text-base">神戶布引香草園</h4>
+                            <p class="text-xs text-slate-600">可步行或搭乘CITY LOOP觀光公車前往。香草園山麓站搭乘纜車，至<strong>香草園山頂站</strong>購買蜂蜜牛奶霜淇淋，往下漫步香草花園與溫室，可於<strong>The Veranda 神戶</strong>2樓享用烤牛肉三明治（1,550 yen）。最後於<strong>風之丘中間站</strong>搭乘纜車返回。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.kobeherb.com/tw/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg border border-amber-200 transition">
-                                <i class="fa-solid fa-ticket"></i> 香草園官網
+                            <a href="https://www.kobeherb.com/tw/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
+                                <i class="fa-solid fa-ticket"></i> 官網
                             </a>
                             <a href="https://www.klook.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
                                 <i class="fa-solid fa-tags"></i> Klook 門票
                             </a>
-                            <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">高評價景點</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
                     </div>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">13:30 - 14:45</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">13:30 - 14:45</span>
                             <h4 class="font-bold text-slate-900 text-base">生田神社參拜 & 瑪黑兄弟 (Mariage Frères) 買茶葉</h4>
                             <p class="text-xs text-slate-600">參拜古老神戶能量中心生田神社，隨後至神戶 BAL 2F 選購法國頂級香氛茶葉。</p>
                         </div>
@@ -296,7 +361,7 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">14:45 - 15:15</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">14:45 - 15:15</span>
                             <h4 class="font-bold text-slate-900 text-base">本神戶肉 森谷商店 元町本店（牛肉可樂餅）</h4>
                             <p class="text-xs text-slate-600">順路品嚐現炸外酥內嫩的招牌神戶牛肉可樂餅，作為甜點前的極致鹹食小點。</p>
                         </div>
@@ -310,7 +375,7 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">15:15 - 16:15</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">15:15 - 16:15</span>
                             <h4 class="font-bold text-slate-900 text-base">HARBS 神戶 CLEFY 三宮店（下午茶）</h4>
                             <p class="text-xs text-slate-600">享用招牌新鮮水果千層蛋糕與精品手沖咖啡。</p>
                         </div>
@@ -324,15 +389,15 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">17:00 - 21:00</span>
-                            <h4 class="font-bold text-slate-900 text-base">有馬溫泉 太閤の湯（泡湯 & 壽喜燒御膳晚餐）</h4>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">17:00 - 21:00</span>
+                            <h4 class="font-bold text-slate-900 text-base">有馬溫泉 太閤之湯（泡湯 & 壽喜燒御膳晚餐）</h4>
                             <p class="text-xs text-slate-600">享受古湯「金泉・銀泉」與岩盤浴，晚餐品嚐特選壽喜燒御膳（17:30 開始供應，最後點餐 20:30）。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.kkday.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg border border-amber-200 transition">
-                                <i class="fa-solid fa-hot-tub-person"></i> KKday 套票
+                            <a href="https://www.taikounoyu.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
+                                <i class="fa-solid fa-hot-tub-person"></i> 官網
                             </a>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg font-medium">極致放鬆</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
                     </div>
                 </div>
@@ -341,13 +406,12 @@
 
         <!-- ==================== DAY 3 CONTENT ==================== -->
         <div id="content-day3" class="day-content space-y-6 hidden">
-            
-            <!-- 3:1 Banner Image Header: 100% Full-Bleed Edge-to-Edge with NO Border / Overlay / Rounding / Text -->
+            <!-- 3:1 Banner Image Header -->
             <div class="w-full aspect-[3/1] bg-slate-100 overflow-hidden">
-                <img src="img/day3.png" 
+                <img src="https://n0tti.github.io/test/img/day3.png"
                      alt="Osaka Dotonbori Banner" 
                      class="w-full h-full object-cover block"
-                     onerror="this.src='https://placehold.co/1800x600/fef3c7/d97706?text=Dotonbori+%26+Mido-suji+Ginkgo+Banner+3%3A1'">
+                     onerror="this.src='https://placehold.co/1800x600/e3e8e1/465a41?text=Dotonbori+%26+Mido-suji+Ginkgo+Banner+3%3A1'">
             </div>
 
             <!-- Content Area Below Banner -->
@@ -356,19 +420,19 @@
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-2">
                         <div>
-                            <span class="text-amber-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 03 ‧ 11月14日（六）</span>
+                            <span class="text-matcha-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 03 ‧ 11月14日（六）</span>
                             <h2 class="text-xl sm:text-2xl font-black text-slate-900">モーリヤ神戶牛 ➔ 大阪APA Check-in ➔ 寶可夢咖啡 ➔ 御堂筋銀杏與道頓堀遊船</h2>
                         </div>
-                        <span class="text-xs bg-amber-50 text-amber-800 border border-amber-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
+                        <span class="text-xs bg-matcha-50 text-matcha-800 border border-matcha-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
                             <i class="fa-regular fa-clock mr-1"></i>作息：07:00 起床 | 23:00 就寢
                         </span>
                     </div>
 
                     <!-- Detailed Transportation Guidance Box -->
-                    <div class="bg-amber-50/80 border border-amber-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
-                        <div class="font-bold text-amber-900 flex items-center justify-between">
-                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-amber-700"></i> 今日詳細交通與嚴格規則</span>
-                            <a href="https://www.apahotel.com/resort/midosujihonmachi/" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-800 underline hover:text-amber-900">
+                    <div class="bg-matcha-50/80 border border-matcha-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
+                        <div class="font-bold text-matcha-900 flex items-center justify-between">
+                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-matcha-700"></i> 今日詳細交通與嚴格規則</span>
+                            <a href="https://www.apahotel.com/resort/midosujihonmachi/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
                                 <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>APA 御堂筋本町官網
                             </a>
                         </div>
@@ -381,12 +445,12 @@
                 <!-- Timeline Activities -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
                     <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center">
-                        <i class="fa-solid fa-list-check mr-2 text-amber-600"></i> 今日行程時程表
+                        <i class="fa-solid fa-list-check mr-2 text-matcha-600"></i> 今日行程時程表
                     </h3>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">11:00 - 12:30</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">11:00 - 12:30</span>
                             <h4 class="font-bold text-slate-900 text-base">モーリヤ (Moriya) 本店 頂級神戶牛午餐</h4>
                             <p class="text-xs text-slate-600"><span class="text-emerald-700 font-bold"><i class="fa-solid fa-circle-check"></i> 已預訂成功</span>。百年老店極致鐵板燒神戶牛午餐。</p>
                         </div>
@@ -400,7 +464,7 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">12:30 - 14:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">12:30 - 14:00</span>
                             <h4 class="font-bold text-slate-900 text-base">領取行李 ➔ 搭車至大阪 ➔ 入住 APA 御堂筋本町</h4>
                             <p class="text-xs text-slate-600">回飯店提領行李，搭車前往大阪完成 Check-in。<span class="text-red-600 font-medium">（無中途景點）</span></p>
                         </div>
@@ -414,12 +478,12 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">16:10 - 17:30</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">16:10 - 17:30</span>
                             <h4 class="font-bold text-slate-900 text-base">ポケモンカフェ (Pokémon Cafe) OSAKA</h4>
                             <p class="text-xs text-slate-600"><span class="text-emerald-700 font-bold"><i class="fa-solid fa-circle-check"></i> 已預訂成功</span>。心齋橋大丸本館 9F 主題下午茶。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.pokemoncenter-online.com/cafe/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg border border-amber-200 transition">
+                            <a href="https://www.pokemoncenter-online.com/cafe/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
                                 <i class="fa-solid fa-gamepad"></i> Cafe 官網
                             </a>
                             <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg font-medium">已預訂</span>
@@ -428,7 +492,7 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">17:30 - 19:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">17:30 - 19:00</span>
                             <h4 class="font-bold text-slate-900 text-base">御堂筋金黃銀杏大道 ➔ 難波高島屋選購伴手禮</h4>
                             <p class="text-xs text-slate-600">漫步秋季限定金黃銀杏大道，前往難波高島屋大阪店進行第一階段伴手禮採購。</p>
                         </div>
@@ -442,12 +506,12 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">19:00 - 21:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">19:00 - 21:00</span>
                             <h4 class="font-bold text-slate-900 text-base">道頓堀觀光遊船 & 霓虹川畔晚餐</h4>
                             <p class="text-xs text-slate-600">乘船欣賞道頓堀川與固力果招牌夜景，享用道地章魚燒或拉麵晚餐。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.klook.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg border border-amber-200 transition">
+                            <a href="https://www.klook.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
                                 <i class="fa-solid fa-ship"></i> 遊船預訂
                             </a>
                             <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">觀光遊船</span>
@@ -459,13 +523,12 @@
 
         <!-- ==================== DAY 4 CONTENT ==================== -->
         <div id="content-day4" class="day-content space-y-6 hidden">
-            
-            <!-- 3:1 Banner Image Header: 100% Full-Bleed Edge-to-Edge with NO Border / Overlay / Rounding / Text -->
+            <!-- 3:1 Banner Image Header -->
             <div class="w-full aspect-[3/1] bg-slate-100 overflow-hidden">
-                <img src="img/day4.jpg" 
+                <img src="https://n0tti.github.io/test/img/day4.png" 
                      alt="Katsuo-ji & Abeno Harukas Banner" 
                      class="w-full h-full object-cover block"
-                     onerror="this.src='https://placehold.co/1800x600/fef3c7/d97706?text=Katsuo-ji+%26+Abeno+Harukas+300+Banner+3%3A1'">
+                     onerror="this.src='https://placehold.co/1800x600/e3e8e1/465a41?text=Katsuo-ji+%26+Abeno+Harukas+300+Banner+3%3A1'">
             </div>
 
             <!-- Content Area Below Banner -->
@@ -474,19 +537,19 @@
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-2">
                         <div>
-                            <span class="text-amber-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 04 ‧ 11月15日（日）</span>
+                            <span class="text-matcha-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 04 ‧ 11月15日（日）</span>
                             <h2 class="text-xl sm:text-2xl font-black text-slate-900">勝尾寺二選一 ➔ 江戶川鰻魚飯 ➔ 高島屋補貨 ➔ 阿倍野 HARUKAS 300 展望台</h2>
                         </div>
-                        <span class="text-xs bg-amber-50 text-amber-800 border border-amber-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
+                        <span class="text-xs bg-matcha-50 text-matcha-800 border border-matcha-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
                             <i class="fa-regular fa-clock mr-1"></i>作息：07:00 起床 | 23:00 就寢
                         </span>
                     </div>
 
                     <!-- Detailed Transportation Guidance Box -->
-                    <div class="bg-amber-50/80 border border-amber-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
-                        <div class="font-bold text-amber-900 flex items-center justify-between">
-                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-amber-700"></i> 今日詳細交通與彈性規劃</span>
-                            <a href="https://www.abenoharukas-300.jp/observatory/" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-800 underline hover:text-amber-900">
+                    <div class="bg-matcha-50/80 border border-matcha-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
+                        <div class="font-bold text-matcha-900 flex items-center justify-between">
+                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-matcha-700"></i> 今日詳細交通與彈性規劃</span>
+                            <a href="https://www.abenoharukas-300.jp/observatory/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
                                 <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>HARUKAS 300 官網
                             </a>
                         </div>
@@ -496,31 +559,31 @@
                     </div>
                 </div>
 
-                <!-- Dual Option Card (Rule 12) & Timeline -->
+                <!-- Timeline Activities -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
                     <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center">
-                        <i class="fa-solid fa-list-check mr-2 text-amber-600"></i> 今日行程時程表
+                        <i class="fa-solid fa-list-check mr-2 text-matcha-600"></i> 今日行程時程表
                     </h3>
 
                     <!-- Morning Plan Option Box -->
-                    <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-200 space-y-3">
+                    <div class="bg-matcha-50/50 p-4 rounded-xl border border-matcha-200 space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="inline-block px-2.5 py-1 rounded bg-amber-100 text-amber-900 text-xs font-bold">08:00 - 12:00 上午彈性方案（二選一）</span>
-                            <span class="text-[11px] text-amber-800 font-medium">依當日體力彈性決定</span>
+                            <span class="inline-block px-2.5 py-1 rounded bg-matcha-100 text-matcha-900 text-xs font-bold">08:00 - 12:00 上午彈性方案（二選一）</span>
+                            <span class="text-[11px] text-matcha-800 font-medium">依當日體力彈性決定</span>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                             <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-2">
                                 <div>
-                                    <span class="font-bold text-amber-900 text-sm block mb-1">🔹 方案 A：勝尾寺勝運參拜</span>
+                                    <span class="font-bold text-matcha-900 text-sm block mb-1">🔹 方案 A：勝尾寺勝運參拜</span>
                                     <p class="text-slate-600 leading-relaxed">搭車前往箕面勝尾寺，欣賞滿山紅葉與密集達摩牆，祈求勝運與事業順利。</p>
                                 </div>
-                                <a href="https://katsuo-ji-temple.or.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-amber-800 underline font-medium inline-flex items-center gap-1">
+                                <a href="https://katsuo-ji-temple.or.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> 勝尾寺官網交通
                                 </a>
                             </div>
                             <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-2">
                                 <div>
-                                    <span class="font-bold text-amber-900 text-sm block mb-1">🔹 方案 B：不前往勝尾寺（市區慢活）</span>
+                                    <span class="font-bold text-matcha-900 text-sm block mb-1">🔹 方案 B：不前往勝尾寺（市區慢活）</span>
                                     <p class="text-slate-600 leading-relaxed">享受質感咖啡廳，深度漫步美國村、橘子街（Orange Street）潮流品牌店與黑門市場。</p>
                                 </div>
                                 <a href="https://www.google.com/maps/search/?api=1&query=Orange+Street+Osaka" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-700 underline font-medium inline-flex items-center gap-1">
@@ -532,7 +595,7 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">12:30 - 14:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">12:30 - 14:00</span>
                             <h4 class="font-bold text-slate-900 text-base">江戸川 心斎橋 PARCO 店 鰻魚飯午餐</h4>
                             <p class="text-xs text-slate-600"><span class="text-emerald-700 font-bold"><i class="fa-solid fa-circle-check"></i> 已預訂成功</span>。品嚐關西風精緻鰻魚重御膳（PARCO 13F）。</p>
                         </div>
@@ -546,7 +609,7 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">14:00 - 16:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">14:00 - 16:00</span>
                             <h4 class="font-bold text-slate-900 text-base">難波高島屋大阪店 伴手禮最後補貨</h4>
                             <p class="text-xs text-slate-600">採購精緻銘菓、仙貝、抹茶禮盒與獺祭酒類伴手禮。</p>
                         </div>
@@ -560,12 +623,12 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">16:00 - 19:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">16:00 - 19:00</span>
                             <h4 class="font-bold text-slate-900 text-base">阿倍野 HARUKAS 300 展望台</h4>
                             <p class="text-xs text-slate-600">登上 60 樓 360 度玻璃展望台，俯瞰大阪落日餘暉與壯麗萬家燈火夜景。</p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.klook.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg border border-amber-200 transition">
+                            <a href="https://www.klook.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
                                 <i class="fa-solid fa-ticket"></i> Klook 門票
                             </a>
                             <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">絕美夜景</span>
@@ -577,13 +640,12 @@
 
         <!-- ==================== DAY 5 CONTENT ==================== -->
         <div id="content-day5" class="day-content space-y-6 hidden">
-            
-            <!-- 3:1 Banner Image Header: 100% Full-Bleed Edge-to-Edge with NO Border / Overlay / Rounding / Text -->
+            <!-- 3:1 Banner Image Header -->
             <div class="w-full aspect-[3/1] bg-slate-100 overflow-hidden">
-                <img src="img/day5.jpg" 
+                <img src="https://n0tti.github.io/test/img/day5.png"
                      alt="Kansai International Airport Banner" 
                      class="w-full h-full object-cover block"
-                     onerror="this.src='https://placehold.co/1800x600/fef3c7/d97706?text=Kansai+Airport+Departure+Banner+3%3A1'">
+                     onerror="this.src='https://placehold.co/1800x600/e3e8e1/465a41?text=Kansai+Airport+Departure+Banner+3%3A1'">
             </div>
 
             <!-- Content Area Below Banner -->
@@ -592,19 +654,19 @@
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-2">
                         <div>
-                            <span class="text-amber-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 05 ‧ 11月16日（一）</span>
+                            <span class="text-matcha-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 05 ‧ 11月16日（一）</span>
                             <h2 class="text-xl sm:text-2xl font-black text-slate-900">飯店退房 ➔ 南海電鐵 Rapi:t ➔ 關西機場 T2 飛離</h2>
                         </div>
-                        <span class="text-xs bg-amber-50 text-amber-800 border border-amber-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
+                        <span class="text-xs bg-matcha-50 text-matcha-800 border border-matcha-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
                             <i class="fa-regular fa-clock mr-1"></i>作息：07:00 起床
                         </span>
                     </div>
 
                     <!-- Detailed Transportation Guidance Box -->
-                    <div class="bg-amber-50/80 border border-amber-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
-                        <div class="font-bold text-amber-900 flex items-center justify-between">
-                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-amber-700"></i> 今日詳細交通指引</span>
-                            <a href="https://www.howto-osaka.com/tc/rapit/" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-800 underline hover:text-amber-900">
+                    <div class="bg-matcha-50/80 border border-matcha-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
+                        <div class="font-bold text-matcha-900 flex items-center justify-between">
+                            <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-matcha-700"></i> 今日詳細交通指引</span>
+                            <a href="https://www.howto-osaka.com/tc/rapit/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
                                 <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>南海電鐵特急官網
                             </a>
                         </div>
@@ -616,23 +678,23 @@
                 <!-- Timeline Activities -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
                     <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center">
-                        <i class="fa-solid fa-list-check mr-2 text-amber-600"></i> 今日行程時程表
+                        <i class="fa-solid fa-list-check mr-2 text-matcha-600"></i> 今日行程時程表
                     </h3>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">07:30 - 08:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">07:30 - 08:00</span>
                             <h4 class="font-bold text-slate-900 text-base">APA 飯店退房</h4>
                             <p class="text-xs text-slate-600">辦理退房。<span class="text-red-600 font-medium">（嚴格執行 Rule 6：退房後不安排任何行程）</span></p>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2.5 py-1.5 rounded-lg font-medium">飯店退房</span>
+                            <span class="text-xs bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg font-medium">飯店退房</span>
                         </div>
                     </div>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">08:00 - 09:00</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">08:00 - 09:00</span>
                             <h4 class="font-bold text-slate-900 text-base">南海電鐵 Rapi:t 至關西機場 T1 ➔ T2 免費接駁車</h4>
                             <p class="text-xs text-slate-600">難波站搭乘南海特急直達機場，轉乘接駁公車至 T2 航廈。</p>
                         </div>
@@ -646,7 +708,7 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-mono font-medium">10:35</span>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">10:35</span>
                             <h4 class="font-bold text-slate-900 text-base">關西機場 T2 飛離（順利返航）</h4>
                             <p class="text-xs text-slate-600">滿載美味記憶與滿滿戰利品，結束完美的關西 5 天 4 夜質感獨旅。</p>
                         </div>
@@ -658,16 +720,615 @@
             </div>
         </div>
 
+        <!-- ========================================================================= -->
+        <!-- INDEPENDENT MODULES (INDEPENDENT FROM DAILY ITINERARY)                     -->
+        <!-- ========================================================================= -->
+        <div class="max-w-4xl mx-auto px-4 space-y-12 pt-8 border-t-2 border-slate-200/80">
+
+            <!-- MODULE 1: Luggage & Essentials Checklist -->
+            <section id="checklist" class="scroll-mt-20">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-matcha-100 text-matcha-800 flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">1. 行李與物品清單</h3>
+                                <p class="text-xs text-slate-500">Luggage & Essentials Checklist ‧ 支援自動記憶儲存</p>
+                            </div>
+                        </div>
+                        <button onclick="resetChecklist()" class="text-xs text-matcha-800 hover:text-matcha-900 bg-matcha-50 hover:bg-matcha-100 px-3 py-1.5 rounded-lg border border-matcha-200 transition">
+                            <i class="fa-solid fa-rotate-left mr-1"></i> 重置清單
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+                        <!-- Category A -->
+                        <div class="bg-slate-50/80 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-matcha-900 mb-3 flex items-center gap-2 text-sm">
+                                <i class="fa-solid fa-passport text-matcha-700"></i> 證件與財務 (Documents & Money)
+                            </h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="doc-1">
+                                    <span class="text-slate-800">護照正本（效期 6 個月以上）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="doc-2">
+                                    <span class="text-slate-800">日幣現金（建議 3-5 萬日圓現鈔）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="doc-3">
+                                    <span class="text-slate-800">海外高刷卡回饋信用卡（至少兩張）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="doc-4">
+                                    <span class="text-slate-800">ICOCA / 西瓜卡（綁定 Apple Pay 或實體卡）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="doc-5">
+                                    <span class="text-slate-800">Visit Japan Web 入境 QR Code 截圖</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Category B -->
+                        <div class="bg-slate-50/80 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-matcha-900 mb-3 flex items-center gap-2 text-sm">
+                                <i class="fa-solid fa-mobile-screen-button text-matcha-700"></i> 電子產品 (Electronics)
+                            </h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="elec-1">
+                                    <span class="text-slate-800">智慧型手機 & 充電線</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="elec-2">
+                                    <span class="text-slate-800">行動電源（需隨身攜帶登機，禁托運）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="elec-3">
+                                    <span class="text-slate-800">日本 eSIM / 實體 SIM 卡 / 漫遊已開通</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="elec-4">
+                                    <span class="text-slate-800">多孔 Fast Charge 充電頭</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Category C -->
+                        <div class="bg-slate-50/80 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-matcha-900 mb-3 flex items-center gap-2 text-sm">
+                                <i class="fa-solid fa-shirt text-matcha-700"></i> 服裝穿搭 (Clothing for Nov)
+                            </h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="cloth-1">
+                                    <span class="text-slate-800">保暖防風外衣 / 輕量羽絨外套（11月溫差大）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="cloth-2">
+                                    <span class="text-slate-800">長袖長褲多套 & 內衣褲襪子</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="cloth-3">
+                                    <span class="text-slate-800">舒適好走的運動鞋 / 休閒鞋</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Category D -->
+                        <div class="bg-slate-50/80 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-matcha-900 mb-3 flex items-center gap-2 text-sm">
+                                <i class="fa-solid fa-pump-soap text-matcha-700"></i> 個人藥品與保養 (Essentials)
+                            </h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="med-1">
+                                    <span class="text-slate-800">常備藥品（感冒藥、止痛藥、腸胃藥、OK繃）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="med-2">
+                                    <span class="text-slate-800">保濕護唇膏 & 護手霜（日本秋季較乾燥）</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer hover:bg-white p-1.5 rounded transition">
+                                    <input type="checkbox" class="chk-item w-4 h-4 text-matcha-600 rounded border-slate-300 focus:ring-matcha-500" data-id="med-3">
+                                    <span class="text-slate-800">刮鬍刀 & 個人清潔盥洗用品</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MODULE 2: Shopping Wishlist -->
+            <section id="shopping" class="scroll-mt-20">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
+                        <div class="w-10 h-10 rounded-xl bg-matcha-100 text-matcha-800 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">2. 預計購物清單</h3>
+                            <p class="text-xs text-slate-500">Shopping Wishlist ‧ 神戶與大阪伴手禮目標</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-sm">
+                        <!-- Wishlist Card 1 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-matcha-300 transition flex flex-col justify-between space-y-2">
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="font-bold text-slate-900 text-base">風見雞本舖 布丁</span>
+                                    <span class="text-[10px] bg-matcha-100 text-matcha-800 px-2 py-0.5 rounded font-semibold">神戶</span>
+                                </div>
+                                <p class="text-slate-600 text-xs mb-2">日文：風見鶏本舗 プリン</p>
+                                <p class="text-slate-700">濃郁奶香與焦糖，神戶必買手信。</p>
+                            </div>
+                            <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fa-solid fa-store mr-1 text-matcha-600"></i>北野異人館</span>
+                                <span class="font-semibold text-matcha-800">約 ¥1,200/盒</span>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Card 2 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-matcha-300 transition flex flex-col justify-between space-y-2">
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="font-bold text-slate-900 text-base">瑪黑兄弟 法式茶葉</span>
+                                    <span class="text-[10px] bg-matcha-100 text-matcha-800 px-2 py-0.5 rounded font-semibold">神戶</span>
+                                </div>
+                                <p class="text-slate-600 text-xs mb-2">Mariage Frères (マリアージュ フレール)</p>
+                                <p class="text-slate-700">經典皇家婚禮茶、馬可波羅調味紅茶。</p>
+                            </div>
+                            <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fa-solid fa-store mr-1 text-matcha-600"></i>神戶 BAL 2F</span>
+                                <span class="font-semibold text-matcha-800">約 ¥3,000/罐</span>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Card 3 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-matcha-300 transition flex flex-col justify-between space-y-2">
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="font-bold text-slate-900 text-base">森谷商店 牛肉可樂餅</span>
+                                    <span class="text-[10px] bg-matcha-100 text-matcha-800 px-2 py-0.5 rounded font-semibold">神戶</span>
+                                </div>
+                                <p class="text-slate-600 text-xs mb-2">本神戸肉 森谷商店 コロッケ</p>
+                                <p class="text-slate-700">現炸熱騰騰牛肉可樂餅，外酥內嫩。</p>
+                            </div>
+                            <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fa-solid fa-store mr-1 text-matcha-600"></i>元町本店</span>
+                                <span class="font-semibold text-matcha-800">約 ¥100/個</span>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Card 4 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-matcha-300 transition flex flex-col justify-between space-y-2">
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="font-bold text-slate-900 text-base">高島屋 銘菓與清酒</span>
+                                    <span class="text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded font-semibold">大阪</span>
+                                </div>
+                                <p class="text-slate-600 text-xs mb-2">難波高島屋 デパ地下</p>
+                                <p class="text-slate-700">精緻日式仙貝、抹茶禮盒、獺祭專櫃。</p>
+                            </div>
+                            <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fa-solid fa-store mr-1 text-matcha-600"></i>難波高島屋 B1</span>
+                                <span class="font-semibold text-matcha-800">彈性預算</span>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Card 5 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-matcha-300 transition flex flex-col justify-between space-y-2">
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="font-bold text-slate-900 text-base">寶可夢中心周邊</span>
+                                    <span class="text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded font-semibold">大阪</span>
+                                </div>
+                                <p class="text-slate-600 text-xs mb-2">Pokémon Center Osaka</p>
+                                <p class="text-slate-700">皮卡丘大阪限定玩偶、原創文具商品。</p>
+                            </div>
+                            <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fa-solid fa-store mr-1 text-matcha-600"></i>大丸心齋橋 9F</span>
+                                <span class="font-semibold text-matcha-800">約 ¥2,500/件</span>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Card 6 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-matcha-300 transition flex flex-col justify-between space-y-2">
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="font-bold text-slate-900 text-base">勝尾寺 勝利達摩御守</span>
+                                    <span class="text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded font-semibold">箕面</span>
+                                </div>
+                                <p class="text-slate-600 text-xs mb-2">勝ちダルマ (Kachi Daruma)</p>
+                                <p class="text-slate-700">祈求事業勝運與目標達成之紅色達摩。</p>
+                            </div>
+                            <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fa-solid fa-store mr-1 text-matcha-600"></i>勝尾寺本堂</span>
+                                <span class="font-semibold text-matcha-800">約 ¥2,000/尊</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MODULE 3: Essential Contacts & Emergency Info -->
+            <section id="contacts" class="scroll-mt-20">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
+                        <div class="w-10 h-10 rounded-xl bg-matcha-100 text-matcha-800 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">3. 必要聯絡資訊與緊急求助</h3>
+                            <p class="text-xs text-slate-500">Essential Contacts & Emergency Info ‧ 在日安全保障</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                        <!-- Emergency Calls -->
+                        <div class="bg-red-50/60 p-4 rounded-xl border border-red-200 space-y-2">
+                            <h4 class="font-bold text-red-900 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-triangle-exclamation text-red-600"></i> 日本緊急求助電話
+                            </h4>
+                            <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-red-100">
+                                <div>
+                                    <span class="font-bold text-slate-900 block">警察局 (Police)</span>
+                                    <span class="text-xs text-slate-500">緊急事件、物品遺失</span>
+                                </div>
+                                <a href="tel:110" class="px-3 py-1 bg-red-600 text-white font-mono font-bold rounded-lg text-sm hover:bg-red-700">110</a>
+                            </div>
+                            <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-red-100">
+                                <div>
+                                    <span class="font-bold text-slate-900 block">救護車 / 消防 (Ambulance)</span>
+                                    <span class="text-xs text-slate-500">突發傷病、火災救助</span>
+                                </div>
+                                <a href="tel:119" class="px-3 py-1 bg-red-600 text-white font-mono font-bold rounded-lg text-sm hover:bg-red-700">119</a>
+                            </div>
+                        </div>
+
+                        <!-- TECO Osaka -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-building-columns text-matcha-700"></i> 台北駐大阪經濟文化辦事處
+                            </h4>
+                            <p class="text-slate-700"><strong>電話：</strong><a href="tel:+81-6-6227-8558" class="text-matcha-800 underline">+81-6-6227-8558</a></p>
+                            <p class="text-slate-700"><span class="text-red-600 font-bold">急難救助專線：</span><a href="tel:+81-90-8794-4568" class="text-red-700 font-mono font-bold underline">+81-90-8794-4568</a></p>
+                            <p class="text-slate-600 text-xs">地址：大阪市北区中之島2-3-18 中之島フェスティバルタワー17階</p>
+                        </div>
+
+                        <!-- Hotel 1 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-1">
+                            <span class="text-[10px] bg-matcha-100 text-matcha-800 px-2 py-0.5 rounded font-semibold">神戶住宿 (11/12-14)</span>
+                            <h5 class="font-bold text-slate-900 text-sm">東橫INN 神戶三宮站東</h5>
+                            <p class="text-slate-700">電話：<a href="tel:+81-78-231-1045" class="text-matcha-800 underline">+81-78-231-1045</a></p>
+                            <p class="text-slate-600 text-xs">地址：兵庫県神戸市中央区御幸通4-1-12</p>
+                        </div>
+
+                        <!-- Hotel 2 -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-1">
+                            <span class="text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded font-semibold">大阪住宿 (11/14-16)</span>
+                            <h5 class="font-bold text-slate-900 text-sm">APA飯店＆度假村 御堂筋本町站前塔樓</h5>
+                            <p class="text-slate-700">電話：<a href="tel:+81-570-081-111" class="text-matcha-800 underline">+81-570-081-111</a></p>
+                            <p class="text-slate-600 text-xs">地址：大阪府大阪市中央区南本町4-1-7</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MODULE 4: Useful Japanese Travel Phrases -->
+            <section id="phrases" class="scroll-mt-20">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
+                        <div class="w-10 h-10 rounded-xl bg-matcha-100 text-matcha-800 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">4. 旅遊實用日文句子</h3>
+                            <p class="text-xs text-slate-500">Useful Japanese Travel Phrases ‧ 用餐、問路與購物</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                        <!-- Category 1: Dining -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+                            <h4 class="font-bold text-matcha-900 text-sm border-b border-slate-200 pb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-utensils text-matcha-700"></i> 點餐與用餐 (Dining)
+                            </h4>
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="text-slate-500 block text-[11px]">請給我這個：</span>
+                                    <p class="font-bold text-slate-900">これをお願いします。</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Kore o onegaishimasu.</p>
+                                </div>
+                                <div class="pt-1 border-t border-slate-200/60">
+                                    <span class="text-slate-500 block text-[11px]">有中文菜單嗎？：</span>
+                                    <p class="font-bold text-slate-900">中国語のメニューはありますか？</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Chūgokugo no menyū wa arimasu ka?</p>
+                                </div>
+                                <div class="pt-1 border-t border-slate-200/60">
+                                    <span class="text-slate-500 block text-[11px]">麻煩請結帳：</span>
+                                    <p class="font-bold text-slate-900">お会計をお願いします。</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Okaikei o onegaishimasu.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 2: Transport -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+                            <h4 class="font-bold text-matcha-900 text-sm border-b border-slate-200 pb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-train text-matcha-700"></i> 交通與問路 (Transport)
+                            </h4>
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="text-slate-500 block text-[11px]">請問～在哪裡？：</span>
+                                    <p class="font-bold text-slate-900">～はどこですか？</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">~ wa doko desu ka?</p>
+                                </div>
+                                <div class="pt-1 border-t border-slate-200/60">
+                                    <span class="text-slate-500 block text-[11px]">請問這班車會到～嗎？：</span>
+                                    <p class="font-bold text-slate-900">この電車は～に行きますか？</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Kono densha wa ~ ni ikimasu ka?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 3: Shopping -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+                            <h4 class="font-bold text-matcha-900 text-sm border-b border-slate-200 pb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-bag-shopping text-matcha-700"></i> 購物與退稅 (Shopping & Tax)
+                            </h4>
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="text-slate-500 block text-[11px]">可以辦理免稅嗎？：</span>
+                                    <p class="font-bold text-slate-900">免税手続きはできますか？</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Mensei tetsuzuki wa dekimasu ka?</p>
+                                </div>
+                                <div class="pt-1 border-t border-slate-200/60">
+                                    <span class="text-slate-500 block text-[11px]">可以用信用卡嗎？：</span>
+                                    <p class="font-bold text-slate-900">クレジットカードは使えますか？</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Kredittokādo wa tsukaemasu ka?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 4: Hotel & Onsen -->
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+                            <h4 class="font-bold text-matcha-900 text-sm border-b border-slate-200 pb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-hotel text-matcha-700"></i> 飯店與溫泉 (Hotel & Onsen)
+                            </h4>
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="text-slate-500 block text-[11px]">請問可以寄放行李嗎？：</span>
+                                    <p class="font-bold text-slate-900">荷物を預かっていただけますか？</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Luggage: Luggage o azakatte itadakemasu ka?</p>
+                                </div>
+                                <div class="pt-1 border-t border-slate-200/60">
+                                    <span class="text-slate-500 block text-[11px]">請幫我辦理退房：</span>
+                                    <p class="font-bold text-slate-900">チェックアウトをお願いします。</p>
+                                    <p class="text-matcha-800 font-mono text-[11px]">Chekkuauto o onegaishimasu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MODULE 5: Spot & Product Japanese Glossary -->
+            <section id="glossary" class="scroll-mt-20">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 mb-6 gap-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-matcha-100 text-matcha-800 flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">5. 景點及商品日文原文對照表</h3>
+                                <p class="text-xs text-slate-500">Spot & Product Japanese Glossary ‧ 可直接出示給當地店家看</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Search Bar -->
+                        <div class="relative w-full sm:w-64">
+                            <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
+                            <input type="text" id="glossary-search" placeholder="搜尋景點或日文..." 
+                                   class="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-matcha-500/50">
+                        </div>
+                    </div>
+
+                    <!-- Category Filter Buttons -->
+                    <div class="flex flex-wrap gap-1.5 mb-6 text-xs" id="glossary-filters">
+                        <button class="glossary-filter-btn px-3 py-1 rounded-lg bg-matcha-600 text-white font-medium" data-cat="all">全部 (All)</button>
+                        <button class="glossary-filter-btn px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 font-medium" data-cat="dining">美食與餐廳</button>
+                        <button class="glossary-filter-btn px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 font-medium" data-cat="spot">觀光景點</button>
+                        <button class="glossary-filter-btn px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 font-medium" data-cat="station">車站與交通</button>
+                        <button class="glossary-filter-btn px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 font-medium" data-cat="shopping">購物與商品</button>
+                    </div>
+
+                    <!-- Glossary Items List -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm" id="glossary-grid">
+                        
+                        <!-- Item 1 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="dining" data-keywords="燒肉丼十番 yakiniku don juban 神戶美食">
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">美食</span>
+                            <h4 class="font-bold text-slate-900 text-sm">燒肉丼十番</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">焼肉丼 十番（じゅうばん）</p>
+                            <p class="text-slate-500 text-xs font-mono">Yakiniku Don Juban</p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="station" data-keywords="港元町站 海港園地站 minato motomachi harborland 神戶地鐵">
+                            <span class="text-[10px] bg-slate-200 text-slate-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">車站</span>
+                            <h4 class="font-bold text-slate-900 text-sm">港元町站 / 海港園地站</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">みなと元町駅 / ハーバーランド駅</p>
+                            <p class="text-slate-500 text-xs font-mono">Minato-motomachi / Harborland Station</p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="神戶港塔 美利堅公園 kobe port tower meriken park 夜景">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">神戶港塔 / 美利堅公園</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">神戸ポートタワー / メリケンパーク</p>
+                            <p class="text-slate-500 text-xs font-mono">Kobe Port Tower / Meriken Park</p>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="星巴克神戶北野異人館店 starbucks kitano ijinkan 咖啡">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">星巴克 神戶北野異人館店</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">スターバックス コーヒー 神戸北野異人館店</p>
+                            <p class="text-slate-500 text-xs font-mono">Starbucks Coffee Kobe Kitano Ijinkan</p>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="神戶北野天滿神社 kitano tenmangu shrine">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">神戶北野天滿神社</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">北野天満神社（きたのてんまんじんじゃ）</p>
+                            <p class="text-slate-500 text-xs font-mono">Kitano Tenmangu Shrine</p>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="shopping" data-keywords="風見雞本舖 kazamikaze honpo 布丁">
+                            <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">購物</span>
+                            <h4 class="font-bold text-slate-900 text-sm">風見雞本舖</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">風見鶏本舗（かざみどりほんぽ）</p>
+                            <p class="text-slate-500 text-xs font-mono">Kazamikaze Honpo</p>
+                        </div>
+
+                        <!-- Item 7 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="神戶布引香草園 kobe nunobiki herb gardens 纜車">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">神戶布引香草園</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">神戸布引ハーブ園（ぬのびきはーぶえん）</p>
+                            <p class="text-slate-500 text-xs font-mono">Kobe Nunobiki Herb Gardens</p>
+                        </div>
+
+                        <!-- Item 8 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="生田神社 ikuta shrine">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">生田神社</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">生田神社（いくたじんじゃ）</p>
+                            <p class="text-slate-500 text-xs font-mono">Ikuta Shrine</p>
+                        </div>
+
+                        <!-- Item 9 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="shopping" data-keywords="瑪黑兄弟神戶店 mariage freres tea 法國茶">
+                            <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">購物</span>
+                            <h4 class="font-bold text-slate-900 text-sm">瑪黑兄弟 神戶店</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">マリアージュ フレール 神戸店</p>
+                            <p class="text-slate-500 text-xs font-mono">Mariage Frères Kobe</p>
+                        </div>
+
+                        <!-- Item 10 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="dining" data-keywords="本神戶肉 森谷商店 元町本店 moriya croquette 牛肉可樂餅">
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">美食</span>
+                            <h4 class="font-bold text-slate-900 text-sm">本神戸肉 森谷商店 元町本店</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">本神戸肉 森谷商店（もりやしょうてん）</p>
+                            <p class="text-slate-500 text-xs font-mono">Moriya Shoten Motomachi</p>
+                        </div>
+
+                        <!-- Item 11 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="dining" data-keywords="HARBS 神戶クレフィ三宮店 harbs kobe clefy 千層蛋糕">
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">美食</span>
+                            <h4 class="font-bold text-slate-900 text-sm">HARBS 神戶 CLEFY 三宮店</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">ハーブス 神戸クレフィ三宮店</p>
+                            <p class="text-slate-500 text-xs font-mono">HARBS Kobe Clefy Sannomiya</p>
+                        </div>
+
+                        <!-- Item 12 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="有馬溫泉 太閤の湯 arima onsen taiko no yu 泡湯 壽喜燒">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">有馬溫泉 太閤の湯</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">有馬温泉 太閤の湯（たいこうのゆ）</p>
+                            <p class="text-slate-500 text-xs font-mono">Arima Onsen Taiko-no-yu</p>
+                        </div>
+
+                        <!-- Item 13 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="dining" data-keywords="モーリヤ 本店 moriya honten 神戶牛 鐵板燒">
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">美食</span>
+                            <h4 class="font-bold text-slate-900 text-sm">モーリヤ 本店</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">モーリヤ 本店（ほんてん）</p>
+                            <p class="text-slate-500 text-xs font-mono">Moriya Honten</p>
+                        </div>
+
+                        <!-- Item 14 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="dining" data-keywords="ポケモンカフェ OSAKA pokemon cafe osaka 寶可夢">
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">美食</span>
+                            <h4 class="font-bold text-slate-900 text-sm">ポケモンカフェ OSAKA</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">ポケモンカフェ OSAKA</p>
+                            <p class="text-slate-500 text-xs font-mono">Pokémon Cafe Osaka</p>
+                        </div>
+
+                        <!-- Item 15 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="御堂筋銀杏大道 midosuji ginkgo avenue 銀杏">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">御堂筋銀杏大道</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">御堂筋のイチョウ並木（みどうすじ）</p>
+                            <p class="text-slate-500 text-xs font-mono">Midosuji Ginkgo Avenue</p>
+                        </div>
+
+                        <!-- Item 16 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="道頓堀遊船 dotonbori cruise tombori river cruise">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">道頓堀觀光遊船</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">とんぼりワンダークรูズ / ワンダークรูズ</p>
+                            <p class="text-slate-500 text-xs font-mono">Tombori River Cruise / Dotonbori Cruise</p>
+                        </div>
+
+                        <!-- Item 17 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="shopping" data-keywords="難波高島屋 namba takashimaya 百貨 伴手禮">
+                            <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">購物</span>
+                            <h4 class="font-bold text-slate-900 text-sm">難波高島屋</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">髙島屋 大阪店（なんばたかしまや）</p>
+                            <p class="text-slate-500 text-xs font-mono">Namba Takashimaya</p>
+                        </div>
+
+                        <!-- Item 18 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="勝尾寺 katsuo ji 箕面 達摩 紅葉">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">勝尾寺</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">勝尾寺（かつおうじ）</p>
+                            <p class="text-slate-500 text-xs font-mono">Katsuo-ji Temple</p>
+                        </div>
+
+                        <!-- Item 19 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="dining" data-keywords="江戶川 心齋橋PARCO店 edogawa shinsaibashi 鰻魚飯">
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">美食</span>
+                            <h4 class="font-bold text-slate-900 text-sm">江戸川 心斎橋 PARCO 店</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">鰻 江戸川 心斎橋パルコ店</p>
+                            <p class="text-slate-500 text-xs font-mono">Edogawa Shinsaibashi PARCO</p>
+                        </div>
+
+                        <!-- Item 20 -->
+                        <div class="glossary-card bg-slate-50 p-3.5 rounded-xl border border-slate-200 hover:border-matcha-300 transition" data-cat="spot" data-keywords="阿倍野 HARUKAS 300 展望台 abeno harukas 天王寺 夜景">
+                            <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-semibold mb-1 inline-block">景點</span>
+                            <h4 class="font-bold text-slate-900 text-sm">阿倍野 HARUKAS 300 展望台</h4>
+                            <p class="text-matcha-800 font-bold text-base my-0.5">ハルカス300（展望台）</p>
+                            <p class="text-slate-500 text-xs font-mono">Abeno Harukas 300 Observatory</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-200/80 mt-12 py-8 text-center text-xs text-slate-500 bg-white">
+    <footer class="border-t border-slate-200/80 py-8 text-center text-xs text-slate-500 bg-white">
         <p>2026 Kobe & Osaka Itinerary Planner — Tailored for Quality Solo Travel.</p>
     </footer>
 
-    <!-- Interactive JavaScript for Tabs -->
+    <!-- Interactive JavaScript for Tabs, Checklist Persistence & Glossary Filter -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // === 1. Day Tabs Navigation ===
             const tabs = document.querySelectorAll('.day-tab');
             const contents = document.querySelectorAll('.day-content');
 
@@ -677,11 +1338,11 @@
 
                     // Active Tab Styling
                     tabs.forEach(t => {
-                        t.classList.remove('bg-amber-600', 'text-white', 'shadow-md', 'shadow-amber-600/20');
+                        t.classList.remove('bg-matcha-600', 'text-white', 'shadow-md', 'shadow-matcha-600/20');
                         t.classList.add('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
                     });
                     tab.classList.remove('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
-                    tab.classList.add('bg-amber-600', 'text-white', 'shadow-md', 'shadow-amber-600/20');
+                    tab.classList.add('bg-matcha-600', 'text-white', 'shadow-md', 'shadow-matcha-600/20');
 
                     // Show Active Day Content
                     contents.forEach(content => {
@@ -699,6 +1360,86 @@
                     });
                 });
             });
+
+            // === 2. Checklist LocalStorage Persistence ===
+            const checkboxes = document.querySelectorAll('.chk-item');
+            const STORAGE_KEY = 'kobe_osaka_checklist_2026';
+
+            // Load saved states
+            let savedState = {};
+            try {
+                savedState = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            } catch(e) {
+                savedState = {};
+            }
+
+            checkboxes.forEach(chk => {
+                const id = chk.getAttribute('data-id');
+                if (savedState[id]) {
+                    chk.checked = true;
+                    chk.nextElementSibling.classList.add('line-through', 'text-slate-400');
+                }
+
+                chk.addEventListener('change', (e) => {
+                    savedState[id] = e.target.checked;
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(savedState));
+                    if (e.target.checked) {
+                        e.target.nextElementSibling.classList.add('line-through', 'text-slate-400');
+                    } else {
+                        e.target.nextElementSibling.classList.remove('line-through', 'text-slate-400');
+                    }
+                });
+            });
+
+            window.resetChecklist = function() {
+                if (confirm('確定要清空已勾選的行李清單嗎？')) {
+                    localStorage.removeItem(STORAGE_KEY);
+                    checkboxes.forEach(chk => {
+                        chk.checked = false;
+                        chk.nextElementSibling.classList.remove('line-through', 'text-slate-400');
+                    });
+                }
+            };
+
+            // === 3. Glossary Filter & Search ===
+            const searchInput = document.getElementById('glossary-search');
+            const filterBtns = document.querySelectorAll('.glossary-filter-btn');
+            const glossaryCards = document.querySelectorAll('.glossary-card');
+
+            let currentCategory = 'all';
+
+            function filterGlossary() {
+                const query = searchInput.value.trim().toLowerCase();
+
+                glossaryCards.forEach(card => {
+                    const matchesCategory = (currentCategory === 'all') || (card.getAttribute('data-cat') === currentCategory);
+                    const keywords = card.getAttribute('data-keywords').toLowerCase();
+                    const text = card.textContent.toLowerCase();
+                    const matchesQuery = !query || keywords.includes(query) || text.includes(query);
+
+                    if (matchesCategory && matchesQuery) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-matcha-600', 'text-white');
+                        b.classList.add('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+                    });
+                    btn.classList.remove('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+                    btn.classList.add('bg-matcha-600', 'text-white');
+
+                    currentCategory = btn.getAttribute('data-cat');
+                    filterGlossary();
+                });
+            });
+
+            searchInput.addEventListener('input', filterGlossary);
         });
     </script>
 </body>
