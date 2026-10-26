@@ -48,7 +48,7 @@
 </head>
 <body class="bg-[#fcfcf9] text-slate-800 min-h-screen flex flex-col selection:bg-matcha-200 selection:text-matcha-900">
 
-    <!--標題/主視覺區塊-->
+    <!-- Header / Hero Section -->
     <header class="relative bg-gradient-to-b from-white via-matcha-50/50 to-[#fcfcf9] border-b border-slate-200/80 shadow-sm">
         <div class="max-w-5xl mx-auto px-4 py-10 sm:py-14 text-center">
             <span class="inline-block py-1.5 px-4 rounded-full bg-matcha-100/90 text-matcha-900 text-xs sm:text-sm font-semibold mb-4 border border-matcha-200 shadow-sm">
@@ -61,7 +61,7 @@
                 極簡步行動線‧美景‧美食‧溫泉
             </p>
             
-            <!--航班&住宿資訊-->
+            <!-- Flight & Hotel Info -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-left text-xs sm:text-sm">
                 <div class="bg-white/90 p-4 rounded-2xl border border-slate-200/80 shadow-sm backdrop-blur">
                     <div class="font-bold text-matcha-800 mb-2 flex items-center justify-between">
@@ -89,7 +89,7 @@
                 11/12（四）神戶港
             </button>
             <button data-day="day2" class="day-tab px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
-                11/13（五）異人館 ➔ 太閤之湯
+                11/13（五）異人館 ➔ 布引香草園 ➔ 有馬溫泉
             </button>
             <button data-day="day3" class="day-tab px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
                 11/14（六）寶可夢 ➔ 道頓堀
@@ -121,17 +121,16 @@
         </div>
     </div>
 
-    <!--主要內容-->
+    <!-- Main Content Container -->
     <main class="w-full flex-grow space-y-12 pb-16">
-        
-        <!-- ==================== DAY 4 CONTENT ==================== -->
+
+        <!-- ==================== DAY 1 CONTENT ==================== -->
         <div id="content-day1" class="day-content space-y-6">
             <!-- 3:1 Banner Image Header: 100% Full-Bleed Edge-to-Edge with NO Border / Overlay / Rounding / Text -->
             <div class="w-full aspect-[3/1] bg-slate-100 overflow-hidden">
                 <img src="https://n0tti.github.io/test/img/day1.png" 
                      alt="Kobe Night View Banner" 
-                     class="w-full h-full object-cover block"
-                     onerror="this.src='https://placehold.co/1800x600/e3e8e1/465a41?text=Kobe+Port+Night+View+Banner+3%3A1'">
+                     class="w-full h-full object-cover block">
             </div>
 
             <!-- Content Area Below Banner -->
@@ -156,11 +155,11 @@
                                 <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>南苑貴賓室位置圖
                             </a>
                         </div>
-                        <p><strong>高雄機場：</strong>須於航班起飛（14:20）前150分鐘～50分鐘至樂桃航空櫃台辦理報到。出境安檢完成後，往左方步行3分鐘刷中信LINE Pay鼎極卡使用<strong>南苑國際商務中心</strong>。</p>
+                        <p><strong>高雄機場：</strong>須於航班起飛（14:20）前150分鐘～50分鐘至樂桃航空櫃台辦理報到。出境安檢完成後，往左方步行3分鐘刷中信LINE Pay鼎極卡使用<strong>南苑國際商務中心</strong>，牛肉麵必點，陳列的餐點沒了之後就會換上別的菜色。</p>
                     </div>
                 </div>
 
-                <!--第1天行程表-->
+                <!-- Timeline Activities -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
                     <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center">
                         <i class="fa-solid fa-list-check mr-2 text-matcha-600"></i> 今日行程
@@ -182,13 +181,13 @@
                             <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">18:05 - 20:25</span>
                             <h4 class="font-bold text-slate-900 text-base">關西機場第2航廈 ➔ 神戶三宮站</h4>
                             <p class="text-xs text-slate-600">入境通關後領取行李，在第2航廈（T2）直接購票搭乘利木津巴士，前往神戶三宮站（2,200 yen，車程約80分鐘）。</p>
+                            <a href="https://www.kate.co.jp/tcn/timetable/detail/KB" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-bus"></i> 神戶三宮站利木津巴士時刻表
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
                             <a href="https://www.kate.co.jp/tcn/kix_busstop/#terminal2" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
                                 <i class="fa-solid fa-location-dot text-red-500"></i> 乘車處
-                            </a>
-                            <a href="https://www.kate.co.jp/tcn/timetable/detail/KB" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
-                                <i class="fa-solid fa-bus"></i> 時刻表
                             </a>
                             <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-lg font-medium">交通</span>
                         </div>
@@ -202,7 +201,7 @@
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
                             <a href="https://www.google.com/maps/search/?api=1&query=東横INN神戸三宮駅東" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-location-dot text-red-500"></i> 地圖
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 位置
                             </a>
                             <span class="text-xs bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg font-medium">住宿</span>
                         </div>
@@ -210,16 +209,22 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">20:45 - 21:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">燒肉丼十番（神戶三宮店）</h4>
-                            <p class="text-xs text-slate-600">招牌是カルビ丼，只收現金。進入店內後，在左手邊的售票機點餐，將餐券交給店員，然後前往店員引導的座位就座。</p>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">20:45 - 21:45</span>
+                            <h4 class="font-bold text-slate-900 text-base">燒肉丼十番（神戶三宮店） ➔ 鳴門鯛燒本舖 阪急三宮站前店</h4>
+                            <p class="text-xs text-slate-600">十番的招牌是カルビ丼（牛五花丼），只收現金。進入店內後，在左手邊的售票機點餐，將餐券交給店員，然後前往店員引導的座位就座。</p>
+                            <a href="https://ju-ban.com/yakinikudon/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-utensils"></i> 燒肉丼十番官網
+                            </a>
+                            <a href="https://www.taiyaki.co.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-utensils"></i> 鳴門鯛燒本舖官網
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
                             <a href="https://www.google.com/maps/search/?api=1&query=燒肉丼+十番" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-location-dot text-red-500"></i> 地圖
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 燒肉丼
                             </a>
-                            <a href="https://ju-ban.com/yakinikudon/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-orange-50 hover:bg-orange-100 text-orange-800 px-2.5 py-1.5 rounded-lg border border-orange-200 transition">
-                                <i class="fa-solid fa-utensils"></i> 官網
+                            <a href="https://www.google.com/maps/search/?api=1&query=鳴門鯛燒本舖+阪急三宮站前店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 鯛燒
                             </a>
                             <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg font-medium">美食</span>
                         </div>
@@ -227,20 +232,38 @@
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
-                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">21:30 - 22:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">神戶港散策（美利堅公園 ➔ 神戶港塔 ➔ Mosaic 廣場）</h4>
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">21:45 - 22:45</span>
+                            <h4 class="font-bold text-slate-900 text-base">神戶港（美利堅公園 ➔ 神戶港塔 ➔ Mosaic 廣場）</h4>
                             <p class="text-xs text-slate-600">用餐後步行至<strong>三宮・花時計前站</strong>搭乘神戶地下鐵海岸線，在<strong>港元町站</strong>下車，步行約7分鐘後抵達美利堅公園與神戶港塔（營業至23:00）。可沿著海濱木棧道漫步至摩賽克廣場，最後從<strong>海港園地站</strong>搭乘地鐵返回三宮。</p>
+                            <a href="https://www.kobe-port-tower.com" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-globe"></i> 神戶港塔官網
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
                             <a href="https://www.google.com/maps/search/?api=1&query=メリケンパーク" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-location-dot text-red-500"></i> 公園地圖
-                            </a>
-                            <a href="https://www.kobe-port-tower.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-blue-50 hover:bg-blue-100 text-blue-800 px-2.5 py-1.5 rounded-lg border border-blue-200 transition">
-                                <i class="fa-solid fa-globe"></i> 港塔官網
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 公園
                             </a>
                             <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
                     </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
+                        <div class="space-y-1">
+                            <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">22:45 -</span>
+                            <h4 class="font-bold text-slate-900 text-base">神戶豚骨拉麵 賀正軒 三宮店</h4>
+                            <p class="text-xs text-slate-600">一定要點煎餃。</p>
+                            <a href="https://gashoken.co.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-utensils"></i> 官網
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-2 shrink-0">
+                            <a href="https://www.google.com/maps/search/?api=1&query=神戸豚骨ラーメン+賀正軒+三宮店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 位置
+                            </a>
+                            <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg font-medium">美食</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -251,8 +274,7 @@
             <div class="w-full aspect-[3/1] bg-slate-100 overflow-hidden">
                 <img src="https://n0tti.github.io/test/img/day2.png" 
                      alt="Arima Onsen Banner" 
-                     class="w-full h-full object-cover block"
-                     onerror="this.src='https://placehold.co/1800x600/e3e8e1/465a41?text=Arima+Onsen+%26+Herb+Gardens+Banner+3%3A1'">
+                     class="w-full h-full object-cover block">
             </div>
 
             <!-- Content Area Below Banner -->
@@ -262,7 +284,7 @@
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-2">
                         <div>
                             <span class="text-matcha-700 font-mono text-xs font-bold tracking-wider uppercase block mb-1">DAY 02 ‧ 11月13日（金）</span>
-                            <h2 class="text-xl sm:text-2xl font-black text-slate-900">異人館散策 ➔ 布引香草園 ➔ 太閤之湯</h2>
+                            <h2 class="text-xl sm:text-2xl font-black text-slate-900">異人館 ➔ 布引香草園 ➔ 有馬溫泉</h2>
                         </div>
                         <span class="text-xs bg-matcha-50 text-matcha-800 border border-matcha-200 px-3 py-1.5 rounded-lg font-medium self-start sm:self-auto">
                             <i class="fa-regular fa-clock mr-1"></i>07:00 起床
@@ -273,31 +295,36 @@
                     <div class="bg-matcha-50/80 border border-matcha-200/80 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
                         <div class="font-bold text-matcha-900 flex items-center justify-between">
                             <span class="flex items-center text-sm"><i class="fa-solid fa-route mr-2 text-matcha-700"></i> 今日指南</span>
-                            <a href="https://www.google.com/maps/search/?api=1&query=M6W2%2BCM+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>新生田川站牌地圖
-                            </a>
-                            <a href="https://www.google.com/maps/search/?api=1&query=M5VW%2BX5+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>三宮站Terminal前站牌地圖
-                            </a>
-                            <a href="https://kotsu.city.kobe.lg.jp/bus/bus-stop-list/bus-300/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>新生田川市營巴士時刻表
-                            </a>
-                            <a href="https://rosen.hanshin-bus.co.jp/diagramhomen?mode=1&fr=新生田川〔阪神バス〕&dt=202611130000&dgmpl=新生田川〔阪神バス〕" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>阪神巴士時刻表
-                            </a>
-                            <a href="https://kotsu.city.kobe.lg.jp/bus/bus-stop-list/bus-266/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>三宮站Terminal前市營巴士時刻表
-                            </a>
-                            <a href="https://www.google.com/maps/search/?api=1&query=M5VV%2BFH+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>CITY LOOP三宮往北站牌地圖
-                            </a>
-                            <a href="https://www.shinkibus.co.jp/bus/cityloop/time/" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
-                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>CITY LOOP時刻表
+                            <a href="" target="_blank" rel="noopener noreferrer" class="text-xs text-matcha-800 underline hover:text-matcha-900">
+                                <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> 
                             </a>
                         </div>
-                        <p>07:00起床後可至旅館1樓享用<strong>免費早餐</strong>（供應時間：06:30〜09:00）。 </p>
-                        <p>距離旅館最近的巴士站牌為<strong>新生田川</strong>，可搭乘阪神巴士<strong>西宮神戶線（神戶稅關方向）</strong>及神戶市營巴士<strong>中午12點前的29系統（三宮站Terminal方向）</strong>前往三宮站（中間皆只會經過雲井通1站）。自三宮站Terminal前返回旅館可搭乘<strong>101系統（脇之濱先行HAT神戶方向）</strong>及神戶市營巴士<strong>中午12點後的29系統（HAT神戶經由摩耶埠頭方向）</strong>。</p>
-                        <p><strong>CITY LOOP觀光巴士：</strong>站牌有獨立的編號，三宮站往北的方向為7號，最早的一班為08:50。異人館街為10號，布引香草園為11號，三宮站往南為13號。</p>
+                        <p>起床後可至旅館1樓享用<strong>免費早餐</strong>（供應時間：06:30〜09:00）。 </p>
+                        <p>距離旅館最近的巴士站牌為<strong>新生田川</strong>，可搭乘阪神巴士<strong>西宮神戶線</strong>（神戶稅關方向，下車站名為三宮站前）及神戶市營巴士<strong>中午12點前的29系統</strong>（三宮站Terminal方向，下車站名為三宮站Terminal前）前往三宮站（中間皆只會經過雲井通1站）。</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=M6W2%2BCM+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-location-dot"></i> 新生田川站牌位置
+                        </a>
+                        <a href="https://rosen.hanshin-bus.co.jp/diagramhomen?mode=1&fr=新生田川〔阪神バス〕&dt=202611130000&dgmpl=新生田川〔阪神バス〕" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-bus"></i> 阪神巴士時刻表（神戶稅關方向）
+                        </a>
+                        <a href="https://kotsu.city.kobe.lg.jp/bus/bus-stop-list/bus-300/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-bus"></i> 市營巴士時刻表（中午12點前的29系統，三宮站Terminal方向）
+                        </a>
+                        <p>自三宮站Terminal前返回旅館可搭乘<strong>101系統（脇之濱先行HAT神戶方向）</strong>及神戶市營巴士<strong>中午12點後的29系統（HAT神戶經由摩耶埠頭方向）</strong>。阪神巴士西宮神戶線（阪神西宮方向）的新生田川站牌較遠，不建議撘乘。</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=M5VW%2BX5+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-location-dot"></i> 三宮站Terminal前站牌位置
+                        </a>
+                        <a href="https://kotsu.city.kobe.lg.jp/bus/bus-stop-list/bus-266/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-bus"></i> 市營巴士時刻表（101系統，脇之濱先行HAT神戶方向；中午12點後的29系統，HAT神戶經由摩耶埠頭方向）
+                        </a>
+                        <p><strong>CITY LOOP觀光巴士</strong>：站牌有獨立的編號，三宮站往北的方向為7號，最早的一班為08:50。異人館為10號，布引香草園為11號，三宮站往南為13號。</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=M5VV%2BFH+神戶市+日本兵庫縣" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-location-dot"></i> 7號站牌位置
+                        </a>
+                        <a href="https://www.shinkibus.co.jp/bus/cityloop/time/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-bus"></i> 時刻表
+                        </a>
+                        <p><strong>前往有馬溫泉的方法</strong>：在神戶三宮站搭乘JR巴士、神姬巴士。</p>
                     </div>
                 </div>
 
@@ -310,19 +337,24 @@
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
                             <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">08:30 - 10:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">北野異人館散策</h4>
-                            <p class="text-xs text-slate-600">可步行或搭乘CITY LOOP觀光巴士前往造訪星巴克神戶北野異人館店（08:00開始營業）、北野天滿神社，於風見雞本舖購買招牌布丁當伴手禮。</p>
+                            <h4 class="font-bold text-slate-900 text-base">北野異人館</h4>
+                            <p class="text-xs text-slate-600">可步行或搭乘CITY LOOP觀光巴士前往造訪星巴克神戶北野異人館店（08:00開始營業）、北野天滿神社，於神戶六甲牧場（北野本店）品嘗霜淇淋、風見雞本舖購買招牌布丁當伴手禮。</p>
+                            <a href="https://kazamidori.co.jp/special/zh-t/index.php" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-gift"></i> 風見雞本舖官網
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.google.com/maps/search/?api=1&query=スターバックス+コーヒー+神戶北野異人館店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg border border-emerald-200 transition">
-                                <i class="fa-solid fa-mug-hot"></i> 星巴克地圖
+                            <a href="https://www.google.com/maps/search/?api=1&query=スターバックス+コーヒー+神戶北野異人館店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 星巴克
                             </a>
-                            <a href="https://www.google.com/maps/search/?api=1&query=北野天滿神社
-" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-location-dot text-red-500"></i> 神社地圖
+                            <a href="https://www.google.com/maps/search/?api=1&query=北野天滿神社" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 神社
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=神戶六甲牧場+北野本店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 霜淇淋
                             </a>
                             <a href="https://www.google.com/maps/search/?api=1&query=風見鶏本舗" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-gift"></i> 風見雞本舖地圖
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 風見雞本舖
                             </a>
                             <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
@@ -331,15 +363,18 @@
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
                             <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">10:30 - 12:30</span>
-                            <h4 class="font-bold text-slate-900 text-base">神戶布引香草園</h4>
-                            <p class="text-xs text-slate-600">可步行或搭乘CITY LOOP觀光公車前往。香草園山麓站搭乘纜車，至<strong>香草園山頂站</strong>購買蜂蜜牛奶霜淇淋，往下漫步香草花園與溫室，可於<strong>The Veranda 神戶</strong>2樓享用烤牛肉三明治（1,550 yen）。最後於<strong>風之丘中間站</strong>搭乘纜車返回。</p>
+                            <h4 class="font-bold text-slate-900 text-base">布引香草園</h4>
+                            <p class="text-xs text-slate-600">可步行或搭乘CITY LOOP觀光公車前往。香草園山麓站搭乘纜車，至<strong>香草園山頂站</strong>購買蜂蜜牛奶霜淇淋，往下漫步香草花園與溫室，可於<strong>The Veranda 神戶</strong>2樓享用烤牛肉三明治（¥1,550）。最後於<strong>風之丘中間站</strong>搭乘纜車返回。</p>
+                            <a href="https://www.kobeherb.com/tw/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-ticket"></i> 布引香草園官網
+                            </a>
+                            <a href="https://www.kobeherb.com/tw/the-veranda-at-kobe/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-mug-hot"></i> The Veranda神戶頁面
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.kobeherb.com/tw/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
-                                <i class="fa-solid fa-ticket"></i> 官網
-                            </a>
-                            <a href="https://www.klook.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
-                                <i class="fa-solid fa-tags"></i> Klook 門票
+                            <a href="https://www.google.com/maps/search/?api=1&query=神戸布引ハーブ園／ロープウェイ+Kobe+Nunobiki+Herb+Gardens+&+Ropeway" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 位置
                             </a>
                             <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
@@ -348,12 +383,24 @@
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
                             <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">13:30 - 14:45</span>
-                            <h4 class="font-bold text-slate-900 text-base">生田神社參拜 & 瑪黑兄弟 (Mariage Frères) 買茶葉</h4>
-                            <p class="text-xs text-slate-600">參拜古老神戶能量中心生田神社，隨後至神戶 BAL 2F 選購法國頂級香氛茶葉。</p>
+                            <h4 class="font-bold text-slate-900 text-base">3COINS 神戶店 ➔ 瑪黑兄弟 神戶店</h4>
+                            <p class="text-xs text-slate-600">前往Grace Kobe的1樓與神戶BAL的2樓，分別選購收納袋與法國頂級香氛茶葉。</p>
+                            <a href="https://www.palcloset.jp/display/item/2414-M01-000000/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-bag-shopping"></i> クリアボックスバッグ：LL
+                            </a>
+                            <a href="https://www.palcloset.jp/display/item/2414-M02-000000/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-bag-shopping"></i> クリアボックスバッグ：L
+                            </a>
+                            <a href="https://www.mariagefreres.co.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-leaf"></i> 瑪黑兄弟官網
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.mariagefreres.co.jp/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-800 px-2.5 py-1.5 rounded-lg border border-slate-300 transition">
-                                <i class="fa-solid fa-leaf"></i> 瑪黑兄弟
+                            <a href="https://www.google.com/maps/search/?api=1&query=3COINS+神戸店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 3COINS
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=マリアージュ+フレール+神戸店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 瑪黑兄弟
                             </a>
                             <span class="text-xs bg-blue-100 text-blue-800 px-2.5 py-1.5 rounded-lg font-medium">購物</span>
                         </div>
@@ -362,26 +409,33 @@
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
                             <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">14:45 - 15:15</span>
-                            <h4 class="font-bold text-slate-900 text-base">本神戶肉 森谷商店 元町本店（牛肉可樂餅）</h4>
-                            <p class="text-xs text-slate-600">順路品嚐現炸外酥內嫩的招牌神戶牛肉可樂餅，作為甜點前的極致鹹食小點。</p>
+                            <h4 class="font-bold text-slate-900 text-base">森谷商店 元町本店</h4>
+                            <p class="text-xs text-slate-600">順路品嚐現炸外酥內嫩的招牌神戶牛肉可樂餅，作為甜點前的鹹食小點。</p>
+                            <a href="https://www.moriya-kobe.co.jp/view/page/shoplist-honten" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-utensils"></i> 森谷商店 元町本店店鋪情報
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.moriya-kobe.co.jp/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-orange-50 hover:bg-orange-100 text-orange-800 px-2.5 py-1.5 rounded-lg border border-orange-200 transition">
-                                <i class="fa-solid fa-utensils"></i> 森谷商店
+                            <a href="https://www.google.com/maps/search/?api=1&query=本神戸肉+森谷商店+元町本店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 位置
                             </a>
-                            <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg font-medium">排隊名店</span>
+                            <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg font-medium">名店</span>
                         </div>
                     </div>
 
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
                             <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">15:15 - 16:15</span>
-                            <h4 class="font-bold text-slate-900 text-base">HARBS 神戶 CLEFY 三宮店（下午茶）</h4>
-                            <p class="text-xs text-slate-600">享用招牌新鮮水果千層蛋糕與精品手沖咖啡。</p>
+                            <h4 class="font-bold text-slate-900 text-base">HARBS 神戶 CLEFY 三宮店</h4>
+                            <p class="text-xs text-slate-600">位於CLEFY的1樓。享用招牌水果千層蛋糕（<strong>ミルクレープ</strong>，注意不要點成フレッシュフルーツケーキ）與蘋果汁（アップルジュース）。</p>
+                            <a href="https://www.harbs.co.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-cake-candles"></i> HARBS官網
+                            </a>
+
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.harbs.co.jp/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-pink-50 hover:bg-pink-100 text-pink-800 px-2.5 py-1.5 rounded-lg border border-pink-200 transition">
-                                <i class="fa-solid fa-cake-candles"></i> HARBS
+                            <a href="https://www.google.com/maps/search/?api=1&query=HARBS+神戸クレフィ三宮店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 位置
                             </a>
                             <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1.5 rounded-lg font-medium">美食</span>
                         </div>
@@ -390,12 +444,30 @@
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-slate-300 transition gap-3">
                         <div class="space-y-1">
                             <span class="inline-block px-2 py-0.5 rounded bg-matcha-100 text-matcha-800 text-xs font-mono font-medium">17:00 - 21:00</span>
-                            <h4 class="font-bold text-slate-900 text-base">有馬溫泉 太閤之湯（泡湯 & 壽喜燒御膳晚餐）</h4>
-                            <p class="text-xs text-slate-600">享受古湯「金泉・銀泉」與岩盤浴，晚餐品嚐特選壽喜燒御膳（17:30 開始供應，最後點餐 20:30）。</p>
+                            <h4 class="font-bold text-slate-900 text-base">有馬溫泉</h4>
+                            <p class="text-xs text-slate-600">搭乘神戶市營地下鐵至谷上站轉乘神戶電鐵（往三田方向），再於有馬口站轉乘支線，於<strong>有馬溫泉站</strong>下車。可先前往湯之花堂本舖品嘗賞味期只有5秒的碳酸煎餅（只開到17:45），並於三津森本舖購買禮盒。再到太閤之湯享受古湯「金泉・銀泉」與岩盤浴，晚餐享用神戶牛壽喜燒御膳（17:30 開始供應，最後點餐時間 20:30）。</p>
+                            <a href="https://www.yunohana.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-utensils"></i> 湯之花堂本舖官網
+                            </a>
+                            <a href="https://tansan.co.jp/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-gift"></i> 三津森本舖官網
+                            </a>
+                            <a href="https://www.taikounoyu.com/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-hot-tub-person"></i> 太閤之湯官網
+                            </a>
+                            <a href="https://ars-taikounoyu.triplabo.jp/home" target="_blank" rel="noopener noreferrer" class="text-[11px] text-matcha-800 underline font-medium inline-flex items-center gap-1">
+                                <i class="fa-solid fa-tags"></i> 購票
+                            </a>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <a href="https://www.taikounoyu.com/" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-matcha-50 hover:bg-matcha-100 text-matcha-800 px-2.5 py-1.5 rounded-lg border border-matcha-200 transition">
-                                <i class="fa-solid fa-hot-tub-person"></i> 官網
+                            <a href="https://www.google.com/maps/search/?api=1&query=湯之花堂本舗+太閤通店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 湯之花堂
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=三ツ森+本店" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 三津森
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=太閤之湯" target="_blank" rel="noopener noreferrer" class="text-xs inline-flex items-center gap-1 bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1.5 rounded-lg border border-slate-200 transition">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 太閤之湯
                             </a>
                             <span class="text-xs bg-purple-100 text-purple-800 px-2.5 py-1.5 rounded-lg font-medium">景點</span>
                         </div>
